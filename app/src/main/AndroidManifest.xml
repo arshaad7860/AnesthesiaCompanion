@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mo.anesthesiacompanion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".NewVerifyOtpActivity"></activity>
+        <activity android:name=".CommonActivities.TestActivity" />
+        <activity android:name=".CommonActivities.EditProfileActivity" />
+        <activity android:name=".Anesthetist.MyNewApprovedActivity" />
+        <activity android:name=".Doctor.DoctorMyBookingsActivity" />
+        <activity android:name=".Anesthetist.ViewMyAppliedActivity" />
+        <activity android:name=".CommonActivities.EmergencyActivity" />
+        <activity android:name=".Anesthetist.MyAppliedActivity" />
+        <activity android:name=".Doctor.ApplicantDetailsActivity" />
+        <activity android:name=".Doctor.ViewAppliedAnesthetistsListActivity" />
+        <activity android:name=".CommonActivities.ViewBookingActivity" />
+        <activity android:name=".Doctor.DoctorAddBookingActivity" />
+        <activity android:name=".CommonActivities.DashboardActivity" />
+        <activity android:name=".CommonActivities.ForgotPasswordPhoneActivity" />
+        <activity android:name=".CommonActivities.ForgotPasswordSuccessMessageActivity" />
+        <activity android:name=".CommonActivities.SetNewPasswordActivity" />
+        <activity android:name=".CommonActivities.MakeSelectionActivity" />
+        <activity android:name=".CommonActivities.VerifyOTPActivity" />
+        <activity android:name=".CommonActivities.RegisterActivity3" />
+        <activity android:name=".CommonActivities.RegisterActivity2" />
+        <activity android:name=".CommonActivities.RegisterActivity" />
+        <activity android:name=".CommonActivities.LoginActivity" />
+        <activity android:name=".CommonActivities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:launchMode="standard"
+            tools:replace="android:launchMode" />
+    </application>
+
+</manifest>

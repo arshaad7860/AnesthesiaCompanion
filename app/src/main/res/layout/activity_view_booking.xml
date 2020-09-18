@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackdropbackground"
+    android:padding="15dp"
+    tools:context=".CommonActivities.ViewBookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="@color/white_overlay"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:tint="@color/colorPrimaryDark"
+                android:transitionName="transition_back_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/my_font"
+            android:gravity="center"
+            android:text="View Booking"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:transitionName="transition_register_title_btn" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Dr name-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Dr Name:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Dr Mukadam:"/>
+
+            </RelativeLayout>
+            <!--Surgery Type-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Surgery Type:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="cardio:"/>
+
+            </RelativeLayout>
+            <!--description-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/label_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Surgery Description/Extra Comments:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_below="@+id/label_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="blah blah extra retails:"/>
+
+            </RelativeLayout>
+            <!--hospital name-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Hospital Name:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="waterfall:"/>
+
+            </RelativeLayout>
+            <!--room number-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Room/ER#:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:text="ER 3"/>
+
+            </RelativeLayout>
+            <!--Surgery Time-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Surgery Time:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="10pm"/>
+
+            </RelativeLayout>
+            <!--surgeryDate-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Surgery Date:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Today"/>
+
+            </RelativeLayout>
+            <!--anestheticType-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="Anesthetic Type:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="general"/>
+
+            </RelativeLayout>
+            <!--qualificationType-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:text="Min Qualification Type:"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="BSC:"/>
+
+            </RelativeLayout>
+            <!--isEmergency-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Emergency:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/my_font"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="yes:"/>
+
+            </RelativeLayout>
+            <!--Dr name-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/my_font"
+                android:text="Apply"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="8dp"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_view_applied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="View Applied Candidates"
+                android:layout_marginBottom="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="8dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

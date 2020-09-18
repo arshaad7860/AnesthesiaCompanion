@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123979123142",
+    "firebase_url": "https://anesthesia-companion.firebaseio.com",
+    "project_id": "anesthesia-companion",
+    "storage_bucket": "anesthesia-companion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123979123142:android:42ecd47bc57b35632c4ac7",
+        "android_client_info": {
+          "package_name": "com.mo.anesthesiacompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123979123142-3km4pafs09pf9bn855tn4706hdp13fnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mo.anesthesiacompanion",
+            "certificate_hash": "06165db9a3f53c78c4d712a4b056dc364df220ad"
+          }
+        },
+        {
+          "client_id": "123979123142-0l6snpalen1qa6o85a9jkae15k3o9pfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbP_DOJDxMUC_g2asbPKkHPWaZhKJmJVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123979123142-0l6snpalen1qa6o85a9jkae15k3o9pfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

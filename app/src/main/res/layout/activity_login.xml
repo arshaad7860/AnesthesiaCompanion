@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommonActivities.LoginActivity"
+    android:padding="15dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/my_font"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/acmainlogo"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_logo"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/my_font"
+        android:text="@string/slogan_txt"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/btn_login_ccp"
+            android:background="@drawable/round_corners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true"
+            app:ccpDialog_textColor="@color/colorPrimary"
+            app:ccp_contentColor="@color/colorPrimary"
+            app:ccp_textSize="16sp"
+            android:padding="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Phone"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
+            app:startIconTint="@color/colorPrimary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorAccent"
+            android:id="@+id/txt_phone"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/my_font"
+                android:maxLength="9"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txt_password"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Password"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_outline_lock_24"
+            app:startIconTint="@color/colorPrimary"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorPrimaryDark"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/my_font"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/chk_remember_me_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:text="Remember Me"
+                android:textSize="12sp"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimaryDark"
+                app:buttonTint="@color/colorPrimaryDark"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/my_font"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_forgot_password_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                app:cornerRadius="8dp"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/my_font"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentEnd="true"
+                android:background="@color/transparent"/>
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/my_font"
+
+            app:cornerRadius="8dp"
+            android:text="Login"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btn_login"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/my_font"
+            android:layout_gravity="center"
+            app:cornerRadius="8dp"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:id="@+id/btn_register"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

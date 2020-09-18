@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/background_a_c"
+    tools:context=".CommonActivities.SplashScreenActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/splash_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="#59FFFFFF"
+        app:cardCornerRadius="16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#59FFFFFF"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/anesthesia"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Anesthesia"
+                android:textSize="32sp" />
+
+            <TextView
+
+                android:textStyle="bold"
+                android:id="@+id/companion"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/my_font"
+                android:text="Companion"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/slogan"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/my_font"
+                android:text="@string/slogan_txt"
+                android:gravity="center"
+                android:textSize="23sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

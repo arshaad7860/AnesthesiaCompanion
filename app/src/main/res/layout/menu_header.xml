@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lightWhite"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+
+    android:layout_height="175dp">
+    <TextView
+        android:id="@+id/menu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_txt"
+        android:includeFontPadding="false"
+        android:layout_marginEnd="15dp"
+        android:textSize="25dp"
+        android:layout_above="@id/menu_slogan"
+        android:fontFamily="@font/my_font"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/menu_slogan"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan_txt"
+        android:fontFamily="@font/my_font"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/acmainlogo"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/menu_logo"
+        android:layout_above="@id/menu_slogan"
+        android:scaleType="centerCrop"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mybackdropbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.ApplicantDetailsActivity">
+
+    <LinearLayout
+        android:background="@color/white_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/my_font"
+            android:gravity="center"
+            android:text="Applicant Details"
+            android:textColor="@color/colorAccent2"
+            android:textSize="25sp" />
+        <!--firstname-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="First Name : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="TN MUKADAM"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--lastname-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Last Name : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="lastName"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--phone-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Phone : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="phone"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--email-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Email : "
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="email"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--qualification-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Min Qualification : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_required_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="MBM"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--experience-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Experience : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/my_font"
+                android:text="none"
+
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--occupation-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Occupation : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/my_font"
+                android:text="today"
+
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--hospital-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Hospital : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="hospital"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--status-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Application Status : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="pending"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_approve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/my_font"
+            android:text="Approve" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:text="Reject"
+            app:backgroundTint="@color/colorAccent2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:text="Cancel Booking"
+            app:backgroundTint="@color/colorAccent" />
+    </LinearLayout>
+</RelativeLayout>

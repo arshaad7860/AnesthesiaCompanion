@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/mybackdropbackground"
+    android:layout_height="match_parent"
+    tools:context=".Anesthetist.ViewMyAppliedActivity">
+
+    <LinearLayout
+        android:id="@+id/my_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Dr Name : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_dr_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="TN MUKADAM"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Surgery Type : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_surgery_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Cardio vascular"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Hospital : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Hospital Name"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Anesthesia Type : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_anesthesia_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Generic"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Required Qualification : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_required_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="MBM"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Surgery Time : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_surgery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/my_font"
+                android:text="10pm"
+
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Surgery Date : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_surgery_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="today"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Phone : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="PhoneNumber of doctor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Emergency : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="No"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="Application Status : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="not accepted"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_below="@id/my_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Appointment"
+        android:fontFamily="@font/my_font"
+        app:backgroundTint="@color/colorAccent2"/>
+</RelativeLayout>
